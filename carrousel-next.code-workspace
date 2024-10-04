@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "carrousel-next",
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"clsx",
+			"swiper"
+		]
+	}
+}

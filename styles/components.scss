@@ -1,0 +1,19 @@
+.swiper-pagination {
+  @apply mt-9 flex items-center justify-center space-x-2 text-center;
+}
+
+// .swiper {
+//   @apply max-h-80;
+// }
+
+.banner-pagination-bullet {
+  @apply cursor-pointer h-3 w-3 rounded-full bg-gray-100 opacity-100;
+}
+
+.banner-pagination-bullet-active {
+  @apply h-3 w-6 bg-carrousel-rose duration-200;
+}
+
+.swiper-button-disabled {
+  @apply opacity-50;
+}

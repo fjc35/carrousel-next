@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Cat-1",
+      "description": "Thés biologiques, Cafés de spécialité",
+      "src": "/photos/20240926_135233.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cat-2",
+      "description": "Chocolats, Biscuits",
+      "src": "/photos/20240926_140902.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Cat-3",
+      "description": "Gâteaux de voyage, Confiseries",
+      "src": "/photos/20240926_142803.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Cat-4",
+      "description": "Art de la table, Décorations, Coffrets cadeaux",
+      "src": "/photos/20240926_142803.jpg"
+    }
+]

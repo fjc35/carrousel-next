@@ -1,0 +1,24 @@
+body {
+  @apply bg-carrousel-rose/50;
+}
+
+@font-face {
+  font-family: 'gala';
+  src: url('/fonts/Gala-ExtraCondensedBold/Gala-ExtraCondensedBold.woff2') format('woff2'),
+       url('/fonts/Gala-ExtraCondensedBold/Gala-ExtraCondensedBold.woff') format('woff'),
+       url('/fonts/Gala-ExtraCondensedBold/Gala-ExtraCondensedBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: 400;
+}
+
+@font-face {
+  font-family: 'n27regular';
+  src: url('/fonts/N27-Regular-&-Italic/n27-regular-webfont.eot');
+  src: url('/fonts/N27-Regular-&-Italic/n27-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/N27-Regular-&-Italic/n27-regular-webfont.woff2') format('woff2'),
+       url('/fonts/N27-Regular-&-Italic/n27-regular-webfont.woff') format('woff'),
+       url('/fonts/N27-Regular-&-Italic/n27-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+
+}

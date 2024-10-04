@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "This is an amazing product.",
+      "image": "/photos/20240923_161324.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "This product is also great.",
+      "image": "/photos/20240923_161324.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Product 1",
+      "description": "This is an amazing product.",
+      "image": "/photos/20240923_161324.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Product 2",
+      "description": "This product is also great.",
+      "image": "/photos/20240923_161324.jpg"
+    }
+]

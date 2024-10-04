@@ -1,0 +1,8 @@
+.header {
+  @apply py-5;
+}
+
+// navbar items
+.navbar {
+  @apply relative flex items-center justify-between w-4/6 mx-auto px-5;
+}
