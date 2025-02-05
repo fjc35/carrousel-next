@@ -19,7 +19,7 @@ const ShowBoutique = async () => {
   const file = await fs.readFile(process.cwd() + '/data/boutique.json', 'utf8');
   const data = JSON.parse(file);
 
-  const description = `Le Carrousel de Vern, c’est aussi une sélection de petites merveilles à s’offrir ou à offrir !
+  const description = `Le Carrousel de Vern, c&rsquo;est aussi une sélection de petites merveilles à s&rsquo;offrir ou à offrir !
   Découvrez des objets choisis pour leur originalité, leur caractère unique.`;
 
   return <Categories title="La boutique cadeaux" description={description} categories={data} />;
@@ -31,7 +31,7 @@ const ShowCoffrets = async () => {
 
   const description = `Offrez un cadeau personnalisé en choisissant parmi nos compositions prêtes à offrir ou en créant la vôtre.
   Sélectionnez vos produits préférés parmi les différentes catégories et composez un coffret unique selon vos envies. 
-  Choisissez entre un panier, une pochette transparente, un sac à fenêtre ou une box, et je m’occupe du reste !`;
+  Choisissez entre un panier, une pochette transparente, un sac à fenêtre ou une box, et je m&rsquo;occupe du reste !`;
 
   return <Categories title="Les coffrets cadeaux" description={description} categories={data} />;
 };
@@ -41,7 +41,7 @@ const ShowEntreprise = async () => {
   const data = JSON.parse(file);
 
   const description = `Offrez un cadeau original et sur-mesure à vos collaborateurs, clients ou partenaires. Vous avez le choix entre plusieurs compositions à thème ou des compositions personnalisées, adaptées à vos besoins, votre image et votre budget.
-Contactez-moi pour plus d’informations ou pour personnaliser votre offre !`;
+Contactez-moi pour plus d&rsquo;informations ou pour personnaliser votre offre !`;
 
   return <Categories title="Offre aux associations et entreprises" description={description} categories={data} />;
 };
