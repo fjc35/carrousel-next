@@ -6,10 +6,16 @@ import clsx from 'clsx'
 import { Key, useEffect,  useState } from "react";
 import { Container } from '@/layout/components/Container'
 
-const Categories = ({ title, description = "", categories }: { title: string, description: string, categories: any }) => {
-  let rotations = ['-rotate-2', 'rotate-2', '-rotate-2']
+interface Category {
+  name: string;
+  description: string;
+  src: string;
+}
 
-  const [categoriesData, setCategoriesData] = useState([]);
+const Categories = ({ title, description = "", categories }: { title: string, description: string, categories: Category[] }) => {
+  const rotations = ['-rotate-2', 'rotate-2', '-rotate-2']
+
+  const [categoriesData, setCategoriesData] = useState<Category[]>([]);
 
   useEffect(() => {
     setCategoriesData(categories);
@@ -27,7 +33,7 @@ const Categories = ({ title, description = "", categories }: { title: string, de
         )}
       </div>      
       <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-5 overflow-hidden bg-gradient py-4 px-6 rounded-xl mt-5">
-        {categories?.map((item: any, index: number) => {
+        {categories?.map((item: Category, index: number) => {
           const { name, description, src } = item;
           return (
             <div className="flex flex-col items-center" key={index}>

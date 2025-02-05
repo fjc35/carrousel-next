@@ -71,8 +71,8 @@ const Home = () => {
           <Container className="mt-12">
             <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
               <div className="space-y-10 text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 font-n27regular">L'épicerie fine</h1>
-                <p className="mt-6 text-base text-zinc-600">Je vous invite à découvrir une sélection de délices artisanaux français et très majoritairement locaux : biscuits sucrés et salés, tartinades végétales, caramels au beurre salé, pâtes à tartiner, miel, confiseries,chocolats ainsi qu’une gamme de cafés de spécialité bios, et une large gamme de thés bios.</p>
+                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 font-n27regular">L&rsquo;épicerie fine</h1>
+                <p className="mt-6 text-base text-zinc-600">Je vous invite à découvrir une sélection de délices artisanaux français et très majoritairement locaux : biscuits sucrés et salés, tartinades végétales, caramels au beurre salé, pâtes à tartiner, miel, confiseries,chocolats ainsi qu&rsquo;une gamme de cafés de spécialité bios, et une large gamme de thés bios.</p>
               </div>
             </div>
           </Container>     

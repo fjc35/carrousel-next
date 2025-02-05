@@ -12,7 +12,7 @@ import avatarImage from '@/public/LECARROUSELDEVERN_LOGO_C_ROSE_FONDBLEU.jpg'
 import menuImage from '@/public/LECARROUSELDEVERN_LOGO_C_NB.jpg'
 
 const NavItem = ({ href, children }: { href: string; children: React.ReactNode }) => {
-  let isActive = usePathname() === href
+  const isActive = usePathname() === href
 
   return (
     <li>
@@ -34,9 +34,9 @@ const NavItem = ({ href, children }: { href: string; children: React.ReactNode }
   )
 }
 
-const DesktopNavigation = ({ className }: { className: string }, ...props: any[]) => {
+const DesktopNavigation = ({ className }: { className: string }, ...props: React.HTMLAttributes<HTMLElement>[]) => {
   return (
-    <nav className={className} {...props}>
+    <nav className={className}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
         <li>
           <Link href="/">
@@ -59,13 +59,12 @@ const DesktopNavigation = ({ className }: { className: string }, ...props: any[]
   )
 }
 
-const Avatar = ({ large = false, className }: { large?: boolean; className: string }, ...props: any[]) => {
+const Avatar = ({ large = false, className }: { large?: boolean; className: string }, ...props: React.AnchorHTMLAttributes<HTMLAnchorElement>[]) => {
   return (
     <Link
       href="/"
       aria-label="Home"
       className={clsx(className, 'pointer-events-auto')}
-      {...props}
     >
       <Image
         src={avatarImage}
@@ -110,8 +109,8 @@ const Header = () => {
   }, []);
 
   return (
-      <header className={`header z-30 sticky top-0 ${navbarShadow ? "shadow-sm" : "shadow-none"} ${navbarOpacity ? "bg-white/75" : "bg-white/0" } hidden md:block`} >
-        <div className="navbar z-40">
+      <header className={`py-5 z-30 sticky top-0 ${navbarShadow ? "shadow-sm" : "shadow-none"} ${navbarOpacity ? "bg-white/75" : "bg-white/0" } hidden md:block`} >
+        <div className="relative flex items-center justify-between mx-auto px-5 max-w-3xl z-40">
           <div>
             <DesktopNavigation className="pointer-events-auto hidden md:block" />
           </div>      

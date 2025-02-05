@@ -13,7 +13,7 @@ const RootLayout= ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body
-        className="flex h-full flex-col">
+        className="flex h-full flex-col bg-carrousel-rose/50">
         <div className="relative">
           <Header />
           {children}
