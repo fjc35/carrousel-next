@@ -10,12 +10,17 @@ import { Container } from "@/layout/components/Container";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const PhotoSlider = ({title, collections }: { title: string, collections: any }) => {
-  const [collectionsData, setCollectionsData] = useState([]);
+interface Photos {
+  description: string;
+  image: string;
+}
+
+const PhotoSlider = ({title, photos }: { title: string, photos: Photos[] }) => {
+  const [collectionsData, setCollectionsData] = useState<Photos[]>([]);
 
   useEffect(() => {
-    setCollectionsData(collections);
-  }, [collections]);
+    setCollectionsData(photos);
+  }, [photos]);
 
   return (
     <Container className="mt-8">
@@ -45,8 +50,8 @@ const PhotoSlider = ({title, collections }: { title: string, collections: any })
             },
           }}
         >
-          {collectionsData?.map((item: any, index) => {
-            const { description, image } = item;
+          {collectionsData?.map((photo: Photos, index) => {
+            const { description, image } = photo;
             return (
               <SwiperSlide key={index}>
                 <div className="col-12">

@@ -31,7 +31,7 @@ const GoogleReviews: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative max-w-2xl mx-auto p-6 bg-gray-100 shadow-lg rounded-lg mt-6">
+    <div className="relative max-w-2xl mx-auto p-6 bg-gray-100 shadow-lg rounded-lg mt-12">
       <h2 className="text-xl font-bold mb-4">Avis Google</h2>
       <div className="flex overflow-x-auto gap-4">
         {reviews.length > 0 ? (
