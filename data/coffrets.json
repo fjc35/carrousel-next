@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Paniers",
+      "description": "",
+      "src": "/photos/20240926_135233.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pochettes transparente",
+      "description": "",
+      "src": "/photos/20240926_140902.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sacs à fenêtre",
+      "description": "",
+      "src": "/photos/20240926_142803.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Box",
+      "description": "",
+      "src": "/photos/20240926_142803.jpg"
+    }
+]

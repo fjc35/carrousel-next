@@ -19,7 +19,7 @@ const OuterContainer = forwardRef<HTMLDivElement, MainContainerProps>(
   ({ children, className, ...props }, ref) => {
     return (
       <div ref={ref} className={clsx('md:px-8 lg:px-20', className)} {...props}>
-        <div className="mx-auto lg:max-w-max">{children}</div>
+        <div className="mx-auto">{children}</div>
       </div>
     );
   }

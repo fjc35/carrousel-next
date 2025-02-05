@@ -49,9 +49,11 @@ const DesktopNavigation = ({ className }: { className: string }, ...props: any[]
             
           </Link>
         </li>
-        <NavItem href="#">A propos de moi</NavItem>
+        <NavItem href="/">Acceuil</NavItem>
+        <NavItem href="/apropos">A propos de moi</NavItem>
         <NavItem href="/fournisseurs">Mes fournisseurs</NavItem>
         <NavItem href="#">Mes partenaires</NavItem>
+        <NavItem href="/contact">Contact</NavItem>
       </ul>
     </nav>
   )
@@ -109,7 +111,7 @@ const Header = () => {
 
   return (
       <header className={`header z-30 sticky top-0 ${navbarShadow ? "shadow-sm" : "shadow-none"} ${navbarOpacity ? "bg-white/75" : "bg-white/0" } hidden md:block`} >
-        <div className="navbar flex-wrap z-40">
+        <div className="navbar z-40">
           <div>
             <DesktopNavigation className="pointer-events-auto hidden md:block" />
           </div>      

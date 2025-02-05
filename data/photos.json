@@ -22,5 +22,17 @@
       "name": "Product 2",
       "description": "This product is also great.",
       "image": "/photos/20240923_161324.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Product 2",
+      "description": "This product is also great.",
+      "image": "/photos/20240923_161324.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Product 2",
+      "description": "This product is also great.",
+      "image": "/photos/20240923_161324.jpg"
     }
 ]

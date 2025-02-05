@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Objets art de la table",
+      "description": "Théières, tisanières, cafetières, tasses, plateaux, boites à thés, carafes, etc...",
+      "src": "/photos/20240926_135233.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Accessoires de la maison",
+      "description": "Tabliers, torchons, sacs cabas, etc..",
+      "src": "/photos/20240926_140902.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Accessoires féminins",
+      "description": "Broches, trousses..",
+      "src": "/photos/20240926_142803.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Papeterie",
+      "description": "Cartes postales, carnets de recettes et carnets",
+      "src": "/photos/20240926_142803.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Pour les petits",
+      "description": "Jouets en bois, valise, dînette, verres et assiettes RICE",
+      "src": "/photos/20240926_142803.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Senteurs",
+      "description": "Bougies parfumées, brûleurs et fondants",
+      "src": "/photos/20240926_142803.jpg"
+    }
+]

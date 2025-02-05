@@ -10,7 +10,7 @@ import { Container } from "@/layout/components/Container";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const PhotoSlider = ({ collections }: { collections: any }) => {
+const PhotoSlider = ({title, collections }: { title: string, collections: any }) => {
   const [collectionsData, setCollectionsData] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,12 @@ const PhotoSlider = ({ collections }: { collections: any }) => {
 
   return (
     <Container className="mt-8">
-      <div className="bg-gradient py-4 px-6 rounded-xl">
+      <div className="relative pt-12 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 font-n27regular">
+        {title}
+        </h1>
+      </div>
+      <div className="bg-gradient py-4 px-6 rounded-xl mt-5">
         <Swiper
           pagination={{
             clickable: true,
@@ -30,13 +35,13 @@ const PhotoSlider = ({ collections }: { collections: any }) => {
           spaceBetween={50}
           breakpoints={{
             640: {
-              slidesPerView: 1, 
-            },
-            768: {
               slidesPerView: 2, 
             },
-            1024: {
+            768: {
               slidesPerView: 3, 
+            },
+            1024: {
+              slidesPerView: 5, 
             },
           }}
         >
@@ -50,7 +55,7 @@ const PhotoSlider = ({ collections }: { collections: any }) => {
                     alt={description}
                     width={507}
                     height={385}
-                    className="mx-auto w-[388px] lg:w-[450px]"
+                    className="mx-auto w-[194px] lg:w-[225px]"
                   />                
                 </div>
               </SwiperSlide>

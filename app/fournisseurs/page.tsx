@@ -82,7 +82,7 @@ const Fournisseur = () => {
 
       <SimpleLayout
         title="Mes fournisseurs"
-        intro="[Description]..."
+        intro=""
       >
         <ul
           role="list"

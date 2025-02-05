@@ -4,5 +4,5 @@
 
 // navbar items
 .navbar {
-  @apply relative flex items-center justify-between w-4/6 mx-auto px-5;
+  @apply relative flex items-center justify-between mx-auto px-5 max-w-3xl;
 }

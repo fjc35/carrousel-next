@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import { Key, useEffect,  useState } from "react";
 import { Container } from '@/layout/components/Container'
 
-const Categories = ({ categories }: { categories: any }) => {
+const Categories = ({ title, description = "", categories }: { title: string, description: string, categories: any }) => {
   let rotations = ['-rotate-2', 'rotate-2', '-rotate-2']
 
   const [categoriesData, setCategoriesData] = useState([]);
@@ -17,11 +17,23 @@ const Categories = ({ categories }: { categories: any }) => {
 
   return (
     <Container className="mt-4">
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-5 py-4 overflow-hidden">
+      <div className="relative pt-12 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 font-n27regular">
+        {title}
+        </h1>
+        {description && ( <p style={{ whiteSpace: "pre-line" }} className="mt-6 text-base text-zinc-600">
+          {description}
+        </p>
+        )}
+      </div>      
+      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-5 overflow-hidden bg-gradient py-4 px-6 rounded-xl mt-5">
         {categories?.map((item: any, index: number) => {
-          const { description, src } = item;
+          const { name, description, src } = item;
           return (
-            <div className="flex flex-col justify-evenly items-center" key={index}>
+            <div className="flex flex-col items-center" key={index}>
+              <div className="font-n27regular font-bold w-44 text-center pb-4">
+                {name}
+              </div>
               <div
                 className={clsx(
                     'relative aspect-[9/10] w-32 flex-none overflow-hidden rounded-xl bg-zinc-100',
