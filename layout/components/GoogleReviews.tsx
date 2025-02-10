@@ -10,8 +10,8 @@ interface Review {
 
 const GoogleReviews: React.FC = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
-  const apiKey = "TA_CLE_API"; // Remplace avec ta clé API
-  const placeId = "TA_PLACE_ID"; // Remplace avec ton Google Place ID
+  const apiKey = "AIzaSyCs8MHi9TtW_0jIm6WajId6w00YdSw5JNU";
+  const placeId = "ChIJwyOI-H8nD0gRsaszz2sQP00"; 
 
   useEffect(() => {
     const fetchReviews = async () => {
